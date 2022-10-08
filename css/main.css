@@ -22,8 +22,9 @@ body header {
 }
 body header h1 {
     border: 1px solid black;
-    width: 30%;
+    width: 40%;
     text-align: center;
+    overflow: hidden;
 }
 body header nav{
     width: 50%;
@@ -46,6 +47,7 @@ body main {
     height: 90%;
     justify-content: space-evenly;
     overflow-y: scroll;
+    gap: 10rem;
     
 }
 body footer {
