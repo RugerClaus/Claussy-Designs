@@ -1,4 +1,5 @@
 let displayed = false
+
 export class Mobile {
     static displayNav(a,b) {
         displayed = true

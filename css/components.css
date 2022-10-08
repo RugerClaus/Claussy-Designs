@@ -2,3 +2,32 @@
     background-color: blue;
     color: white;
 }
+
+@media(min-width:900px){
+    body main .homePage {
+        max-height: 100%;
+        width: 90%;
+        display: flex;
+        justify-content: space-evenly;
+        gap: 5rem;
+    }
+    body main .homePage p {
+        align-self: center;
+    }
+    body main h1 {
+        display: block;
+        width: 75%;
+    }
+    
+}
+@media(max-width:900px){
+    body main .homepage {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+    }
+    body main .homePage img {
+        object-fit: contain;
+        max-width: 90%;
+    }
+}

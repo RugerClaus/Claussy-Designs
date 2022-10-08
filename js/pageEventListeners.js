@@ -3,7 +3,7 @@ import { Mobile } from './Mobile.js'
 
 function pageEventListeners(a,b,c,d) {
     a.addEventListener('mouseover', () => {
-        Mobile.displayNav(links, nav)
+        Mobile.displayNav(b, a)
     })
     
     b.addEventListener('mouseover', (e) => {
