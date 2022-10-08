@@ -5,6 +5,8 @@ window.onload = () => {
     UI.loadPage(home)
     UI.loadPage(projects)
     UI.loadPage(websites)
+    UI.loadPage(templates)
+    UI.loadPage(contact)
 }
 
 const screenWidth = window.innerWidth
@@ -13,6 +15,8 @@ const screenHeight = window.innerHeight
 const home = fetch('components/home.html')
 const projects = fetch('components/projects.html')
 const websites = fetch('components/websites.html')
+const templates = fetch('components/templates.html')
+const contact = fetch('components/contact.html')
 
 const links = document.querySelector('nav')
 const nav = document.querySelector('.navigation')
