@@ -15,7 +15,7 @@ const today = new Date()
 footer.innerHTML = `Copyright Claussy Designs ${today.getFullYear()}`
 
 nav.addEventListener('click', (e) => {
-    Mobile.displayNav(links, nav, nav)
+    Mobile.displayNav(links, nav)
 })
 
 links.addEventListener('mouseover', (e) => {
