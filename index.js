@@ -11,6 +11,7 @@ const links = document.querySelector('nav')
 const nav = document.querySelector('.navigation')
 const footer = document.querySelector('.footer')
 const main = document.querySelector('main')
+const ul = document.querySelector('ul')
 
 const today = new Date()
 
@@ -31,7 +32,7 @@ links.addEventListener('mouseout', (e) => {
     }
 })
 
-links.children.item(0).addEventListener('click', (e) => {
+ul.addEventListener('click', (e) => {
     if(e.target.id === 'home'){
         home.then(res => {
             res.text().then(content => {
