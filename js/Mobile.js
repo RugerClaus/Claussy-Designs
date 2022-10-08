@@ -4,8 +4,15 @@ export class Mobile {
         displayed = true
         a.style.display = 'flex'
         b.style.display = 'none'
+        a.addEventListener('click', (e) => {
+            if(e.target.classList.contains('link')){
+                this.undisplayNav(a)
+            }
+        })
     }
-    static undisplayNav() {
+    static undisplayNav(a) {
         displayed = false
+        a.style.display = 'none'
+        
     }
 }
