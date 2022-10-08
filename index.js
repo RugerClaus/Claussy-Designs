@@ -1,16 +1,23 @@
 import { UI } from "./js/UI.js"
 import { Mobile } from "./js/Mobile.js"
 
+window.onload = () => {
+    UI.loadPage(home)
+    UI.loadPage(projects)
+    UI.loadPage(websites)
+}
+
 const screenWidth = window.innerWidth
 const screenHeight = window.innerHeight
 
 const home = fetch('components/home.html')
 const projects = fetch('components/projects.html')
+const websites = fetch('components/websites.html')
 
 const links = document.querySelector('nav')
 const nav = document.querySelector('.navigation')
 const footer = document.querySelector('.footer')
-const main = document.querySelector('main')
+
 const ul = document.querySelector('ul')
 
 const today = new Date()
@@ -32,19 +39,8 @@ links.addEventListener('mouseout', (e) => {
     }
 })
 
-ul.addEventListener('click', (e) => {
-    if(e.target.id === 'home'){
-        home.then(res => {
-            res.text().then(content => {
-                main.innerHTML = content
-            })
-        })
-    }
-    if(e.target.id === 'projects'){
-        projects.then(res => {
-            res.text().then(content => {
-                main.innerHTML = content
-            }) 
-        })
-    }
+ul.childNodes.forEach(child => {
+    child.addEventListener('click', (e) => {
+        UI.changePage(e.target)
+    })
 })
