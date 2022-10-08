@@ -1,0 +1,60 @@
+@import "components.css";
+@import "mobile.css";
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+}
+body header {
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    display: flex;
+    padding: 10px;
+    background-color: rgb(0,0,0,0.5);
+}
+body header h1 {
+    border: 1px solid black;
+    width: 30%;
+    text-align: center;
+}
+body header nav{
+    width: 50%;
+}
+body header nav ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+body header nav ul li {
+    width: 100%;
+    background-color: red;
+    border-right: 1px solid black;
+    text-align: center;
+}
+body main {
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    justify-content: space-evenly;
+    overflow-y: scroll;
+    
+}
+body footer {
+    text-align: center;
+}
+main::-webkit-scrollbar {
+    background-color: lime;
+    width: 10px;
+}
+main::-webkit-scrollbar-thumb {
+    background-color: darkgreen;
+}
