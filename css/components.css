@@ -18,9 +18,11 @@
         display: block;
         width: 75%;
     }
-    
+    body main .homePage img {
+        max-width: 35%;
+    }
 }
-@media(max-width:900px){
+@media(max-width: 900px){
     body main .homepage {
         width: 100%;
         flex-direction: column;

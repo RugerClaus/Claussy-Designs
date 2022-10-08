@@ -11,7 +11,6 @@ export class UI {
         page.then(res => {
             res.text().then(content => {
                 pageContent.push({content})
-                main.innerHTML = pageContent[0].content
                 console.log(pageContent)
             }) 
         })

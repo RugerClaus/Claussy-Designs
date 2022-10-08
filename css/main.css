@@ -53,12 +53,11 @@ body header nav ul li {
 body main {
     display: flex;
     flex-direction: column;
-    height: 90%;
     align-items: center;
     overflow-y: scroll;
     gap: 5rem;
     padding: 30px;
-    
+    justify-content: center;
 }
 body footer {
     text-align: center;
@@ -88,8 +87,44 @@ main::-webkit-scrollbar-thumb {
     font-size: 1.5rem;
 }
 
+body main .welcome {
+    width: fit-content;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+body main .welcome h1 {
+    width: 100%;
+    opacity: 1;
+    background: linear-gradient(to right,red,purple,green);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: glow 5s infinite;
+    text-shadow: 0 10px 50px  green;
+
+}
+
 @media(min-width: 900px){
     header img {
         display: none;
+    }
+    body main .welcome {
+        font-size: 5rem;
+    }
+}
+@keyframes glow {
+    0% {
+        text-shadow: 0 10px 50px  blue;
+        opacity: 0.1
+      }
+    50% {
+        text-shadow: 100 10 50px yellow;
+        opacity: 1;
+      }
+    100% {
+        text-shadow: 100 0 80px blue;
+        opacity: 0.01;
     }
 }
