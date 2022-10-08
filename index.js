@@ -14,7 +14,7 @@ const today = new Date()
 
 footer.innerHTML = `Copyright Claussy Designs ${today.getFullYear()}`
 
-nav.addEventListener('click', (e) => {
+nav.addEventListener('click', () => {
     Mobile.displayNav(links, nav)
 })
 
