@@ -19,7 +19,10 @@ body header {
     justify-content: space-evenly;
     display: flex;
     padding: 10px;
-    background-color: rgb(0,0,0,0.5);
+    background-color: gray;
+    min-height: 10vh;
+    position: sticky;
+    top: 0;
 }
 body header h1 {
     border: 1px solid white;
@@ -66,12 +69,12 @@ body footer {
     position: fixed;
     width: 100%;
 }
-main::-webkit-scrollbar {
+::-webkit-scrollbar {
     background-color: black;
     width: 10px;
     border-radius: 50px;
 }
-main::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
     background-color: white;
     border-radius: 10px;
 }

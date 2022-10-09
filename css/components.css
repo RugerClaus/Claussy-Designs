@@ -3,6 +3,30 @@
     color: white;
 }
 
+body main .projects {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+}
+body main .projects .project {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    gap: 1.5rem;
+}
+body main .projects .project img {
+    object-fit: contain;
+    width: 80%;
+}
+body main .projects .project p {
+    width: 60%;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 30px;
+}
+
 @media(min-width:900px){
     body main .homePage {
         max-height: 100%;
@@ -14,13 +38,14 @@
     body main .homePage p {
         align-self: center;
     }
-    body main h1 {
+    body main .homeH1 {
         display: block;
         width: 75%;
     }
     body main .homePage img {
         max-width: 35%;
     }
+    
 }
 @media(max-width: 900px){
     body main .homepage {
