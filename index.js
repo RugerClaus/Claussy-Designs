@@ -20,6 +20,12 @@ const links = document.querySelector('nav')
 const nav = document.querySelector('.navigation')
 const ul = document.querySelector('ul')
 
+function expand() {
+    document.querySelectorAll('.projectImage')
+}
+
+expand()
+
 pageEventListeners(nav,links,ul,header)
 
 const today = new Date()

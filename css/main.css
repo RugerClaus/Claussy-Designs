@@ -61,6 +61,7 @@ body main {
     gap: 5rem;
     padding: 30px;
     justify-content: center;
+    overflow-x: hidden;
 }
 body footer {
     text-align: center;

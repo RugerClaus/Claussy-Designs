@@ -3,6 +3,10 @@
     color: white;
 }
 
+.expandedImage {
+    width: 100%;
+}
+
 body main .projects {
     display: flex;
     flex-direction: column;
@@ -15,10 +19,15 @@ body main .projects .project {
     width: 100%;
     align-items: center;
     gap: 1.5rem;
+    margin-top: 30px;
+    
 }
 body main .projects .project img {
     object-fit: contain;
     width: 80%;
+    border: 5px solid black;
+    border-radius: 10px;
+    padding: 20px;
 }
 body main .projects .project p {
     width: 60%;
