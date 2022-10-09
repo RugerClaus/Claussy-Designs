@@ -13,6 +13,7 @@ window.onload = () => {
     UI.loadPage(websites)
     UI.loadPage(templates)
     UI.loadPage(contact)
+    UI.expandImage()
 }
 
 const header = document.querySelector('header')
@@ -20,16 +21,9 @@ const links = document.querySelector('nav')
 const nav = document.querySelector('.navigation')
 const ul = document.querySelector('ul')
 
-function expand() {
-    document.querySelectorAll('.projectImage')
-}
-
-expand()
-
 pageEventListeners(nav,links,ul,header)
 
 const today = new Date()
 
 const footer = document.querySelector('.footer')
 footer.innerHTML = `Copyright &copy; Claussy Designs ${today.getFullYear()}`
-

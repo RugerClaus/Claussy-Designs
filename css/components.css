@@ -34,6 +34,7 @@ body main .projects .project p {
     border: 1px solid black;
     border-radius: 10px;
     padding: 30px;
+    background-color: white;
 }
 
 @media(min-width:900px){
@@ -46,6 +47,10 @@ body main .projects .project p {
     }
     body main .homePage p {
         align-self: center;
+        background-color: white;
+        border: 1px solid black;
+        border-radius: 10px;
+        padding: 20px;
     }
     body main .homeH1 {
         display: block;

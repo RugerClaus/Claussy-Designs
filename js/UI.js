@@ -32,5 +32,12 @@ export class UI {
             main.innerHTML = pageContent[4].content
         }
     }
+    static expandImage() {
+        main.addEventListener('click', (e) => {
+            if(e.target.classList.contains('projectImage')){
+                e.target.classList.add('expandedImage')
+            }
+        })
+    }
 }
 

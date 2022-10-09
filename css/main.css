@@ -12,6 +12,12 @@ body {
     display: block;
     width: 100vw;
     height: 100vh;
+    background-image: url('../images/background.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+    overflow-x: hidden;
 }
 body header {
     width: 100%;
