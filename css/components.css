@@ -36,6 +36,12 @@ body main .projects .project p {
     padding: 30px;
     background-color: white;
 }
+body main form #submitButton {
+    width: 40%;
+    font-size: 3rem;
+    padding: 10px;
+    align-self: center;
+}
 
 @media(min-width:900px){
     body main .homePage {
@@ -70,5 +76,16 @@ body main .projects .project p {
     body main .homePage img {
         object-fit: contain;
         max-width: 90%;
+    }
+    body main .homePage p {
+        align-self: center;
+        background-color: white;
+        border: 1px solid black;
+        border-radius: 10px;
+        padding: 20px;
+    }
+    body main .projects .project img {
+        width: 125%;
+        padding: 0;
     }
 }
