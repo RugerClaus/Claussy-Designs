@@ -11,6 +11,25 @@
     <title><?php echo $_SESSION['page'] ?></title>
 </head>
 <body>
-    
+    <form action="../backend/router.php" method="get">
+        <input type="submit" name="home" value="Home">
+        <input type="submit" name="portfolio" value="Portfolio">
+        <input type="submit" name="services" value="Services">
+        <input type="submit" name="contact" value="Contact">
+    </form>
+    <?php 
+        if($_SESSION['page'] === 'Home') {
+            include '../frontend/views/home.php';
+        }
+        if($_SESSION['page'] === 'Portfolio') {
+            include '../frontend/views/portfolio.php';
+        }
+        if($_SESSION['page'] === 'Services') {
+            include '../frontend/views/services.php';
+        }
+        if($_SESSION['page'] === 'Contact') {
+            include '../frontend/views/contact.php';
+        }
+    ?>
 </body>
 </html>
