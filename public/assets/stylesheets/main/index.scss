@@ -1,3 +1,6 @@
+@import url('../animations/animations.css');
+@import url('../mobile/mobile.css');
+
 *, *::before,*::after {
     margin: 0;
     padding: 0;
@@ -9,6 +12,7 @@
     display: grid;
     grid-template-columns: repeat(3,1fr);
     padding: 30px;
+    height: 10vh;
 
     .h-child-one {
         grid-column: 1;
@@ -35,6 +39,29 @@
             cursor: pointer;
             font-size: 1rem;
             font-weight: bold;
+            padding: 5px;
         }
     }
+}
+
+main {
+    height: 90vh;
+    
+    
+    .home {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 100%;
+        animation: fadeIn 1s;
+        color: white;
+        background-color: black;
+        img {
+            height: 80%;
+        }
+    }
+}
+
+.pageActive {
+    background-color: cyan;
 }

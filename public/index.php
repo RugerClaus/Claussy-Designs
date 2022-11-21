@@ -8,18 +8,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php echo $_SESSION['page'] ?></title>
+    <title><?php echo $_SESSION['page']; ?></title>
     <link rel="stylesheet" href="assets/stylesheets/main/index.css">
 </head>
 <body>
     <header class="header">
-        <a href="https://github.com/RugerClaus" class="h-child-one"><img class="github" src="assets/icons/GitHub_Logo.png" alt=""></a>
+        <a href="https://github.com/RugerClaus" target="_blank" class="h-child-one">
+            <img class="github" src="assets/icons/GitHub_Logo.png" alt="">
+        </a>
         <h1 class="h-child-two">Claussy Designs</h1>
         <form action="../backend/router.php" method="get" class="h-child-three">
-            <input type="submit" name="home" value="Home">
-            <input type="submit" name="portfolio" value="Portfolio">
-            <input type="submit" name="services" value="Services">
-            <input type="submit" name="contact" value="Contact">
+            <input type="submit" id="homeButton" name="home" value="Home">
+            <input type="submit" id="portfolioButton" name="portfolio" value="Portfolio">
+            <input type="submit" id="servicesButton" name="services" value="Services">
+            <input type="submit" id="contactButton" name="contact" value="Contact">
         </form>
 
     </header>
@@ -39,5 +41,8 @@
             }
         ?>
     </main>
+
+    <input type="hidden" id="page" value="<?php echo $_SESSION['page']; ?>">
+    <script src="../frontend/js/index.js"></script>
 </body>
 </html>
