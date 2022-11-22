@@ -4,7 +4,7 @@
 
     if(isset($_POST['submit'])){
         $to = 'rogerrock12games@gmail.com';
-        $subject = "<h2>" . $_POST['subject'] . "</h2>";
+        $subject = $_POST['subject'];
         $message = "<p>" . $_POST['message'] . "</p><p>Regards,</p><p>Roger</p>";
         $headers = $from;
         $headers .= "MIME-Version: 1.0\r\n";
