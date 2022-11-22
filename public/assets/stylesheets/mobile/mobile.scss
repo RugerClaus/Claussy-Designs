@@ -9,10 +9,6 @@
                 display: none;
             }
         }
-
-        h1 {
-            
-        }
         .h-child-three {
             input {
                 display: none;
@@ -22,5 +18,27 @@
     }
     main {
         max-height: 90vh;
+
+        .home {
+            flex-direction: column;
+            height: 120%;
+            .landingPage {
+                flex-direction: column;
+                justify-content: unset;
+                align-items: unset;
+                max-width: 100vw;
+                .text {
+                    flex-direction: row;
+                    width: 100%;
+                    h1 {
+                        font-size: 2rem;
+                    }
+                    h6 {
+                        
+                    }
+                }
+                
+            }
+        }
     }
 }
