@@ -3,7 +3,7 @@
     $from = 'submissions@claussydesigns.com';
 
     if(isset($_POST['submit'])){
-        $to = $_POST['to'];
+        $to = 'rogerrock12games@gmail.com';
         $subject = "<h2>" . $_POST['subject'] . "</h2>";
         $message = "<p>" . $_POST['message'] . "</p><p>Regards,</p><p>Roger</p>";
         $headers = $from;
