@@ -1,3 +1,26 @@
 @media(max-width: 920px) {
-    
+    .header {
+        display: flex;
+        max-width: 100vw;
+        height: 8vh;
+
+        .h-child-one {
+            img {
+                display: none;
+            }
+        }
+
+        h1 {
+            
+        }
+        .h-child-three {
+            input {
+                display: none;
+            }
+        }
+
+    }
+    main {
+        max-height: 90vh;
+    }
 }
