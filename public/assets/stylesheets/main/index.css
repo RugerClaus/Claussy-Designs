@@ -210,7 +210,7 @@ main .portfolio .slumdweller .imageWrapper .image {
 }
 main .portfolio .rms {
   display: block;
-  height: 800px;
+  min-height: 1100px;
   width: 100%;
   background-color: coral;
 }
@@ -219,12 +219,12 @@ main .portfolio .rms p {
   padding: 30px;
 }
 main .portfolio .rms .imageWrapper {
-  height: 400px;
+  min-height: 1000px;
   width: 100%;
 }
 main .portfolio .rms .imageWrapper .image {
   width: 100%;
-  height: 100%;
+  height: 900px;
 }
 main .services {
   background-color: rgb(56, 253, 132);
