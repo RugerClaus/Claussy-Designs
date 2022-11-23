@@ -16,7 +16,7 @@
         <a href="https://github.com/RugerClaus" target="_blank" class="h-child-one">
             <img class="github" src="assets/icons/GitHub_Logo.png" alt="">
         </a>
-        <h1 class="h-child-two">Claussy Designs</h1>
+        <h1 class="h-child-two headerText">Claussy Designs</h1>
         <form action="../backend/router.php" method="get" class="h-child-three">
             <input type="submit" id="homeButton" name="home" value="Home">
             <input type="submit" id="portfolioButton" name="portfolio" value="Portfolio">

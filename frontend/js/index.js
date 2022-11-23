@@ -6,6 +6,7 @@ const page = document.getElementById('page').value;
 const footer = document.querySelector('footer')
 const skills = document.querySelector('.skills')
 const github = document.querySelector('.github')
+const header = document.querySelector('.headerText')
 
 
 
@@ -24,7 +25,9 @@ if(page === 'Home'){
         document.querySelector('.seemyskills').style.display = 'flex'
     }, 1000);
     document.querySelector('.seemyskills').addEventListener('click', () => {
-        skills.style.animation = 'scale-in-center 5s'
+        skills.style.animation = 'scale-in-center 1s'
+        github.src = '../public/assets/icons/GitHub_Logo.png'
+        header.style.color = 'black'
         document.querySelector('.seemyskills').style.display = 'none';
         
     })
