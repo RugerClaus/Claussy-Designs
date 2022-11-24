@@ -3,7 +3,7 @@
     $from = 'submissions@claussydesigns.com';
 
     if(isset($_POST['submit'])){
-        $name = test_input($_POST["name"]);
+        $name = $_POST["name"];
         if (!preg_match("/^[a-zA-Z-' ]*$/",$name)) {
         $nameErr = "Only letters and white space allowed";
         }

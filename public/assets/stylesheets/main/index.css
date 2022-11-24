@@ -53,6 +53,9 @@ body {
   font-weight: bold;
   padding: 5px;
 }
+.header .mobileNav {
+  display: none;
+}
 
 footer {
   height: -webkit-fit-content;
