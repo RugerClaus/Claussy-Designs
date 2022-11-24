@@ -32,6 +32,9 @@
         </div>
 
     </header>
+    <div class="mobileDevice">
+        Please view this application on a desktop or laptop computer. Mobile version is in development.
+    </div>
     <main>
         <?php 
             if($_SESSION['page'] === 'Home') {

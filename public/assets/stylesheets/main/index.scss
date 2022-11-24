@@ -279,8 +279,11 @@ main {
             }
         }
     }
+    
 }
-
+.mobileDevice {
+    display: none;
+}
 .pageActive {
     background-color: cyan;
 }
