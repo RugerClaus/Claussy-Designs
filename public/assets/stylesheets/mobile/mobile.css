@@ -10,60 +10,10 @@
     display: block;
     padding: 30px;
   }
-  .header {
-    display: none;
-    max-width: 100vw;
-    height: 8vh;
-  }
-  .header .h-child-one img {
+  body .header {
     display: none;
   }
-  .header .h-child-three input {
+  body main {
     display: none;
-  }
-  .header .mobileNav {
-    display: block;
-  }
-  .header .mobileNav img {
-    width: 50px;
-    height: 50px;
-    background-color: white;
-  }
-  main {
-    max-height: 100vh;
-    display: none;
-  }
-  main .home {
-    flex-direction: column;
-    height: 120%;
-    height: 100vh;
-  }
-  main .home .landingPage {
-    flex-direction: column;
-    justify-content: unset;
-    align-items: unset;
-    max-width: 100vw;
-    padding: 40px;
-  }
-  main .home .landingPage .text {
-    flex-direction: row;
-    width: 100%;
-  }
-  main .home .landingPage .text h1 {
-    font-size: 2rem;
-  }
-  main .home .skills {
-    position: -webkit-sticky;
-    position: sticky;
-    display: block;
-    height: 1000px;
-  }
-  main .home .skills .skillset {
-    flex-direction: column;
-    display: block;
-  }
-  main .home .skills .skillset .skillList {
-    flex-direction: column;
-    display: block;
   }
 }/*# sourceMappingURL=mobile.css.map */
