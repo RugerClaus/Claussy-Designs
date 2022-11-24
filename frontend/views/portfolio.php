@@ -1,6 +1,6 @@
 <section class="portfolio">
     <div class="blurb">
-        <p>All of the following projects are both available on github.</p>
+        <h1>All of the following projects are public on GitHub as developer builds.</h1>
         <a href="#slumdweller"><img src="../public/assets/images/downarrow.png" alt=""></a>
         
     </div>

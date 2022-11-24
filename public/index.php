@@ -4,6 +4,10 @@
 
 <!DOCTYPE html>
 <html lang="en">
+    <meta http-equiv="X-UA-Compatible" content="IE=10">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="keywords" content="websites,website,web development, Web Development, web developer, software, software engineer, self, self taught, developer, self taught developer, php, mysql, sql, database, utah, salt lake city, business">
+    <meta name="description" content="For remarkable websites, come here!">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,6 +27,9 @@
             <input type="submit" id="servicesButton" name="services" value="Services">
             <input type="submit" id="contactButton" name="contact" value="Contact">
         </form>
+        <div class="mobileNav">
+            <img src="assets/icons/hamburgerButton.svg" alt="">
+        </div>
 
     </header>
     <main>
