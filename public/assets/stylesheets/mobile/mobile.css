@@ -80,6 +80,10 @@
   body main .contact form textarea {
     font-size: 1.5rem;
   }
+  body main .services {
+    width: 100vw;
+    padding: 20px;
+  }
   body main .services img {
     width: 100%;
   }
