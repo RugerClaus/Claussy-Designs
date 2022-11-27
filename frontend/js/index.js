@@ -7,8 +7,17 @@ const footer = document.querySelector('footer')
 const skills = document.querySelector('.skills')
 const github = document.querySelector('.github')
 const header = document.querySelector('.headerText')
+const mobileNav = document.querySelector('.mobileNav')
+const mobileSidebar = document.querySelector('.mobileSidebar')
 
-
+mobileNav.addEventListener('click', () => {
+    mobileSidebar.style.display = 'flex'
+})
+mobileSidebar.addEventListener('click', (e) => {
+    if(e.target.classList.contains('btn')){
+        mobileSidebar.style.display = 'none'
+    }
+})
 
 const today = new Date()
 

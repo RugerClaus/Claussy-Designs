@@ -27,13 +27,21 @@
             <input type="submit" id="servicesButton" name="services" value="Services">
             <input type="submit" id="contactButton" name="contact" value="Contact">
         </form>
+        
+
+    </header>
+    <header class="mobileHeader">
         <div class="mobileNav">
             <img src="assets/icons/hamburgerButton.svg" alt="">
         </div>
-
     </header>
-    <div class="mobileDevice">
-        Please view this application on a desktop or laptop computer. Mobile version is in development.
+    <div class="mobileSidebar">
+        <form action="../backend/router.php" method="get">
+            <input type="submit" id="homeButton" name="home" value="Home" class="btn">
+            <input type="submit" id="portfolioButton" name="portfolio" class="btn" value="Portfolio">
+            <input type="submit" id="servicesButton" name="services" class="btn" value="Services">
+            <input type="submit" id="contactButton" name="contact" class="btn" value="Contact">
+        </form>
     </div>
     <main>
         <?php 
