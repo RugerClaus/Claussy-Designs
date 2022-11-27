@@ -17,9 +17,14 @@
     display: flex;
     position: fixed;
     top: 0;
+    background-color: gray;
+    width: 100vw;
   }
   body .mobileHeader .mobileNav {
     display: block;
+  }
+  body .mobileHeader .mobileNav img {
+    z-index: 100;
   }
   body .mobileSidebar {
     position: fixed;
@@ -42,9 +47,40 @@
     max-width: 100vw;
     overflow-y: scroll;
   }
+  body main .home .landingPage {
+    flex-direction: column;
+  }
+  body main .home .landingPage h1 {
+    font-size: 1.5rem;
+  }
+  body main .home .landingPage img {
+    width: 50%;
+  }
+  body main .home .seemyskills {
+    top: 500px;
+  }
   body main .home .skills {
     display: block;
-    position: fixed;
+    position: relative;
     top: 800px;
+    max-width: 100%;
+  }
+  body main .home .skills .skillset {
+    flex-direction: column;
+  }
+  body main .home .skills .skillset .skillList {
+    width: 90%;
+  }
+  body main .contact form {
+    width: 80%;
+  }
+  body main .contact form input {
+    font-size: 1.5rem;
+  }
+  body main .contact form textarea {
+    font-size: 1.5rem;
+  }
+  body main .services img {
+    width: 100%;
   }
 }/*# sourceMappingURL=mobile.css.map */
